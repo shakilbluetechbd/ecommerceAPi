@@ -1,7 +1,10 @@
 laravel new ecommerceApi
 php artisan serve
+php artisan route:list
 php artisan make:model Model/Product -a 
 php artisan make:model Model/Review -a 
 php artisan migrate
 php artisan migrate:reset
 php artisan db:seed
+php artisan make:resource Product/ProductCollection
+php artisan make:resource Product/ProductResource
